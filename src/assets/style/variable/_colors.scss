@@ -1,0 +1,49 @@
+$default_primary: #C02322;
+$default_secondary: #111227;
+$default_tiertiary: #ffb0cb;
+
+$gradient1: linear-gradient(194deg, rgba(255,0,50,1) 0%, rgba(44,0,255,1) 89%);
+$gradient2: linear-gradient(194deg, rgba(255,79,0,1) 0%, rgba(153,255,0,1) 89%);
+$gradient3: linear-gradient(194deg, rgba(96,0,255,1) 0%, rgba(253,29,99,1) 50%, rgba(252,153,69,1) 100%);
+
+$background_light: #ffffff;
+$background_dark: #000000;
+
+$background_tint_light: #e2e2e2;
+$background_tint_dark: #121212;
+
+$color_dark: #fff;
+$color_light: #000000;
+
+$color_tint_dark: #ffffff;
+$color_tint_light: #000000;
+
+$success: #00a77a;
+$danger: #a50014;
+$warning: #ffeb0c;
+$info: #0048ff;
+
+
+$default_primary_rgba: rgba($color: $default_primary, $alpha: 0.1);
+$default_primary_rgba2: rgba($color: $default_primary, $alpha: 0.3);
+
+$default_secondary_rgba: rgba($color: $default_secondary, $alpha: 0.1);
+$default_secondary_rgba2: rgba($color: $default_secondary, $alpha: 0.3);
+
+$default_tiertiary_rgba: rgba($color: $default_tiertiary, $alpha: 0.1);
+$default_tiertiary_rgba2: rgba($color: $default_tiertiary, $alpha: 0.3);
+
+$background_rgba_light: rgba($color: $background_tint_light, $alpha: 0.1);
+$background_rgba_light1: rgba($color: $background_tint_light, $alpha: 0.3);
+$background_rgba_light2: rgba($color: $background_tint_light, $alpha: 0.6);
+$background_rgba_dark: rgba($color: $background_tint_dark, $alpha: 0.1);
+$background_rgba_dark1: rgba($color: $background_dark, $alpha: 0.3);
+$background_rgba_dark2: rgba($color: $background_dark, $alpha: 0.8);
+
+$color_rgba_light: rgba($color: $color_light, $alpha: 0.05);
+$color_rgba_light1: rgba($color: $color_light, $alpha: 0.3);
+$color_rgba_light2: rgba($color: $color_light, $alpha: 0.6);
+
+$color_rgba_dark: rgba($color: $color_dark, $alpha: 0.1);
+$color_rgba_dark1: rgba($color: $color_dark, $alpha: 0.3);
+$color_rgba_dark2: rgba($color: $color_dark, $alpha: 0.6);

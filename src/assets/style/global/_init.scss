@@ -1,0 +1,70 @@
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+::selection{
+    background: $default_primary;
+    color: $color_dark;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    color: $color_light;
+    background-color: $background_light;
+    font-family: $body;
+}
+.tt-app {
+    color: $color_light;
+    background-color: $background_light;
+    font-family: $body;
+    min-height: 100vh;
+    transition: all .25s;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    font-family: $body;
+    &:hover{
+        text-decoration: none;
+    }
+}
+button{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    text-align: left;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    font-family: $body;
+}
+i, strong, span{
+    color: inherit;
+}
+i{
+    font-family: "picha-icon";
+    font-style: normal;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+ul{
+    list-style: none;
+    font-family: $body;
+}
+
+#fill_color{
+    fill: currentColor;
+}
+
+#stroke_color{
+    stroke: currentColor;
+}
+
+#primary{
+    fill: $default_primary;
+}

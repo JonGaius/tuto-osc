@@ -1,0 +1,12 @@
+npx create-react-app nom --template typescript
+yarn create react-app nom --template typescript
+
+yarn start
+npm start
+
+pnpm start
+
+yarn run build
+npm run build
+
+npm install react-router-dom sass framer-motion include-media @studio-freight/lenis iconsax-react
