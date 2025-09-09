@@ -1,5 +1,6 @@
 import React from 'react';
 import { WebRouter } from './routes';
+import { Illustration1, LogoIcon } from './assets/illlustration';
 
 function App() {
   return (

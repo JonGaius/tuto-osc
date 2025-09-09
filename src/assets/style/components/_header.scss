@@ -1,0 +1,95 @@
+.tt-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+    @include media('<=991px'){
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        z-index: 9;
+    }
+    &__logo{
+        position: relative;
+        width: auto;
+        height: 50px;
+        img{
+            @extend %image-width-auto;
+        }
+    }
+}
+
+.tt-header-navigation{
+    position: relative;
+        transition: .3s ease-in-out;
+    &__list{
+        position: relative;
+        display: flex;
+        gap: 4svw;
+        align-items: center;
+        font-size: 16px;
+        @include media('<=991px'){
+            flex-direction: column;
+        }
+        li{
+            position: relative;
+            a{
+                position: relative;
+                @extend %flex-center;
+                &:hover{
+                    &::after{
+                        transform: translateX(-50%) scaleX(1);
+                    }
+                }
+                &::after{
+                    @include pseudo-el;
+                    bottom: -5px;
+                    left: 50%;
+                    width: 40%; 
+                    height: 2px;
+                    background: $default_primary;
+                    transform: translateX(-50%) scaleX(0);
+                    transition: .5s ease;
+                    // transform-origin: right;
+                }
+                &.active{
+                    color: $default_primary;
+                    font-weight: bold;
+                     &::after{
+                        transform: translateX(-50%) scaleX(.5);
+                    }
+                }
+            }
+        }
+    }
+    &.is--active{
+        transform: translateX(0);
+    }
+    @include media('<=991px'){
+        position: fixed;
+        transform: translateX(-100%);
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 100svh;
+        background: #fff;
+        padding: 20px 50px;
+    }
+}
+
+.tt-header-burger{
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    display: none;
+    @include media('<=991px'){
+        display: block;
+    }
+}
